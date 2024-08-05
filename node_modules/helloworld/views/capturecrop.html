@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capture crop</title>
+    <link src="styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>KGL Produce - Manager Dashboard</h1>
+    </header>
+    <div class="container">
+        <h2>Record Produce</h2>
+        <form id="recordProduceForm">
+            <input type="text" id="produceName" placeholder="Name of Produce" required>
+            <input type="text" id="produceType" placeholder="Type of Produce" required>
+            <input type="date" id="produceDate" required>
+            <input type="time" id="produceTime">
+            <input type="number" id="tonnage" placeholder="Tonnage (kg)" required>
+            <input type="number" id="cost" placeholder="Cost (UGX)" required>
+            <input type="text" id="dealerName" placeholder="Name of Dealer" required>
+            <input type="text" id="branchName" placeholder="Branch Name" required>
+            <input type="tel" id="contact" placeholder="Contact" required>
+            <input type="number" id="price" placeholder="Price to Sell At" required>
+            <button type="submit">Record Produce</button>
+        </form>
+ 
+    </div>
+    <script src="capturecrop.js"></script>
+</body>
+</html>
