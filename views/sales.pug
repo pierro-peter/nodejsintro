@@ -1,0 +1,21 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title KGL - Record Sale
+  link(rel='stylesheet' href='styles.css')
+header
+  h1 KGL Produce - Record Sale
+.container
+  form#recordSaleForm
+    input#produceName(type='text' placeholder='Name of Produce' required='')
+    input#tonnage(type='number' placeholder='Tonnage (kg)' required='')
+    input#amountPaid(type='number' placeholder='Amount Paid (UGX)' required='')
+    input#buyerName(type='text' placeholder="Buyer's Name" required='')
+    input#salesAgentName(type='text' placeholder="Sales Agent's Name" required='')
+    input#saleDate(type='date' required='')
+    input#saleTime(type='time')
+    button(type='submit') Record Sale
+  p
+    a(href='index.html') Back to Stock View
+script(src='sales.js')

@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title capture crop
+  link(src='styles.css' rel='stylesheet')
+header
+  h1 KGL Produce - Manager Dashboard
+.container
+  h2 Record Produce
+  form#recordProduceForm
+    input#produceName(type='text' placeholder='Name of Produce' required='')
+    input#produceType(type='text' placeholder='Type of Produce' required='')
+    input#produceDate(type='date' required='')
+    input#produceTime(type='time')
+    input#tonnage(type='number' placeholder='Tonnage (kg)' required='')
+    input#cost(type='number' placeholder='Cost (UGX)' required='')
+    input#dealerName(type='text' placeholder='Name of Dealer' required='')
+    input#branchName(type='text' placeholder='Branch Name' required='')
+    input#contact(type='tel' placeholder='Contact' required='')
+    input#price(type='number' placeholder='Price to Sell At' required='')
+    button(type='submit') Record Produce
+script(src='js/capturecrop.js')
+  

@@ -7,13 +7,16 @@ const path = require("path")
 const app = express();
 
 //configurations
-//import toutes
+
+//import routes
 const studyRoutes = require("./routes/studyRoutes");
 
 
 
-//set the views path
-app.set("views", path.join(__dirname, "views"))
+
+//set view engine to pug
+app.set("view engine","pug")//specify the view engine
+app.set("views", path.join(__dirname, "views"))//specify thee views directory
 
 //middleware
 app.use(express.urlencoded({ extended: true }));
@@ -28,7 +31,7 @@ app.get('/', (req, res) => { // new
 
 // routes
 //use imported roures
-app.use("./", studyRoutes)
+app.use("/", studyRoutes)
 
 
 

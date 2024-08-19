@@ -32,9 +32,13 @@ router.get('/about', (req, res) => { // new
       "This is a student from " + req.query.gender + "  and " + req.query.age);
   });
   
-  //serving html files
+  //rendering a view
   router.get("/first", (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.render("index");
+  });
+  router.post("/first",(req, res) => {
+    console.log(req.body);
+    req.json(req.body);
   });
   
   router.get("/quotes", (req, res) => {
