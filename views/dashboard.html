@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGL Dashboard</title>
+    <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>KGL Dashboard</h1>
+        <p>Welcome! Choose your action below.</p>
+        <button id="logout-button">Logout</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="stats">
+            <div class="stat-item">
+                <h2>Total Stock</h2>
+                <p id="total-stock"></p>
+            </div>
+            <div class="stat-item">
+                <h2>Low Stock Alerts</h2>
+                <p id="low-stock-alerts"></p>
+            </div>
+            <div class="stat-item">
+                <h2>Total Sales</h2>
+                <p id="total-sales"></p>
+            </div>
+            <div class="stat-item">
+                <h2>Today's Sales</h2>
+                <p id="todays-sales"></p>
+            </div>
+            <div class="stat-item">
+                <h2>Pending Credit</h2>
+                <p id="pending-credit"></p>
+            </div>
+        </div>
+
+        <div class="role-options">
+            <!-- Role-Specific Links -->
+            <div class="role-link" id="stockManagement">
+                <h3>Stock Management</h3>
+                <p>Manage and monitor stock levels.</p>
+                <a href="stock.html" class="btn">Go to Stock Management</a>
+            </div>
+
+            <div class="role-link" id="salesManagement">
+                <h3>Sales Management</h3>
+                <p>Track and record sales activities.</p>
+                <a href="sales.html" class="btn">Go to Sales Management</a>
+            </div>
+
+            <div class="role-link" id="reports">
+                <h3>Reports</h3>
+                <p>View detailed reports and analytics.</p>
+                <a href="reports.html" class="btn">Go to Reports</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="/public/scripts/dashboard.js"></script>
+</body>
+</html>

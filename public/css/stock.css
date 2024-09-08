@@ -1,0 +1,56 @@
+/* Styles for Stock Page */
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #388E3C;
+}
+
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.stock-table th, .stock-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.stock-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.stock-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.stock-table td {
+    color: #333;
+}
+
+.low-stock {
+    color: red;
+    font-weight: bold;
+}

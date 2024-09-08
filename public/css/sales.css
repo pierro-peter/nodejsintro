@@ -1,0 +1,66 @@
+/* Styles for Sales Page */
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #388E3C;
+}
+
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.sales-table th, .sales-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.sales-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sales-table tr:hover {
+    background-color: #f1f1f1;
+}

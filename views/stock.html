@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGL Stock Overview</title>
+    <link rel="stylesheet" href="/public/css/stock.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Stock Overview</h1>
+        <p>View and manage the current stock levels of all produce</p>
+    </div>
+
+    <!-- Search/Filter Section -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search produce by name...">
+        <button onclick="filterStock()">Search</button>
+    </div>
+
+    <!-- Stock Table -->
+    <div class="container">
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>Produce Name</th>
+                    <th>Type</th>
+                    <th>Tonnage Available (kg)</th>
+                    <th>Branch</th>
+                    <th>Low Stock Alert</th>
+                </tr>
+            </thead>
+            <tbody id="stock-table-body">
+                <!-- Stock data will be dynamically inserted here via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="/public/scripts/stock.js"></script>
+</body>
+</html>

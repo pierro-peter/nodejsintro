@@ -3,27 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KGL - Record Sale</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>KGL Sales Management</title>
+    <link rel="stylesheet" href="/public/css/sales.css">
 </head>
 <body>
-    <header>
-        <h1>KGL Produce - Record Sale</h1>
-    </header>
-    <div class="container">
-        <form id="recordSaleForm">
-            <input type="text" id="produceName" placeholder="Name of Produce" required>
-            <input type="number" id="tonnage" placeholder="Tonnage (kg)" required>
-            <input type="number" id="amountPaid" placeholder="Amount Paid (UGX)" required>
-            <input type="text" id="buyerName" placeholder="Buyer's Name" required>
-            <input type="text" id="salesAgentName" placeholder="Sales Agent's Name" required>
-            <input type="date" id="saleDate" required>
-            <input type="time" id="saleTime">
-            <button type="submit">Record Sale</button>
-        </form>
-        <p><a href="index.html">Back to Stock View</a></p>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Sales Management</h1>
+        <p>Record and view sales transactions</p>
     </div>
-    <script src="sales.js"></script>
+
+    <!-- Sales Form Section -->
+    <div class="form-container">
+        <h2>Record New Sale</h2>
+        <form id="sales-form">
+            <label for="produce-name">Produce Name:</label>
+            <select id="produce-name" required>
+                <option value="">Select Produce</option>
+                <option value="Beans">Beans</option>
+                <option value="Maize">Maize</option>
+                <option value="Cowpeas">Cowpeas</option>
+                <option value="Rice">Rice</option>
+                <option value="Soybeans">Soybeans</option>
+            </select>
+
+            <label for="tonnage">Tonnage (kg):</label>
+            <input type="number" id="tonnage" min="1" required>
+
+            <label for="amount-paid">Amount Paid (Ugx):</label>
+            <input type="number" id="amount-paid" min="10000" required>
+
+            <label for="buyer-name">Buyer Name:</label>
+            <input type="text" id="buyer-name" required>
+
+            <label for="sales-agent">Sales Agent:</label>
+            <input type="text" id="sales-agent" required>
+
+            <button type="button" onclick="recordSale()">Record Sale</button>
+        </form>
+    </div>
+
+    <!-- Sales Table Section -->
+    <div class="container">
+        <h2>Sales Records</h2>
+        <table class="sales-table">
+            <thead>
+                <tr>
+                    <th>Produce Name</th>
+                    <th>Tonnage (kg)</th>
+                    <th>Amount Paid (Ugx)</th>
+                    <th>Buyer Name</th>
+                    <th>Sales Agent</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody id="sales-table-body">
+                <!-- Sales records will be dynamically inserted here via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="/public/scripts/sales.js"></script>
 </body>
 </html>
-

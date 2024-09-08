@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Happy Hoe Grocery Ltd.</title>
+    <link rel="stylesheet" href="/public/css/signUp.css">
+</head>
+
+<body>
+    <header>
+        <h1>Happy Hoe Grocery Ltd.</h1>
+    </header>
+
+    <main class="form-container">
+        <form id="signup-form">
+            <h2>Create Your Account</h2>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <input type="checkbox" id="show-password"> <label for="show-password">Show Password</label>
+                <small id="password-strength" class="password-strength"></small>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                <small id="password-match" class="password-match"></small>
+            </div>
+            <div class="form-group">
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">Select your role</option>
+                    <option value="manager">Manager</option>
+                    <option value="salesAgent">Sales Agent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="">Select your branch</option>
+                    <option value="maganjo">Maganjo</option>
+                    <option value="matugga">Matugga</option>
+                </select>
+            </div>
+            <button id="next-button" type="button">Next</button>
+            <div class="loader" style="display: none;">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="form-footer">
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </form>
+    </main>
+
+    <script src="/public/scripts/signup.js"></script>
+</body>
+
+</html>

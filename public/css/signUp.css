@@ -1,0 +1,148 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8; /* Light grey background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #27ae60; /* Green background */
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Form container */
+.form-container {
+    background-color: #ffffff; /* White background */
+    width: 100%;
+    max-width: 450px; /* Increased width */
+    margin: 80px auto 20px; /* Margin to ensure it's below the header */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #27ae60; /* Green border on focus */
+}
+
+.password-strength, .password-match {
+    font-size: 12px;
+    display: block;
+}
+
+.password-strength {
+    color: #e74c3c; /* Red color for weak passwords */
+}
+
+.password-match {
+    color: #e74c3c; /* Red color for mismatched passwords */
+}
+
+/* Buttons */
+button {
+    background-color: #27ae60; /* Green background */
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e8449; /* Darker green on hover */
+}
+
+button:disabled {
+    background-color: #bdc3c7; /* Gray background for disabled */
+    cursor: not-allowed;
+}
+
+/* Loader */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #27ae60; /* Green dots */
+    border-radius: 50%;
+    margin: 5px;
+    animation: load 1s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+/* Footer */
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-footer p {
+    margin: 0;
+}
+
+.form-footer a {
+    color: #27ae60; /* Green link */
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
