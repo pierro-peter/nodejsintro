@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (role === 'manager' && managerUsernames.includes(username)) {
             // Redirect to dashboard.html, role info stored in localStorage
             localStorage.setItem('userRole', 'manager');
-            window.location.href = "dashboard.html";
+            window.location.href = "/dashboard.html";
             return true;
         } else if (role === 'sales_agent' && salesAgentUsernames.includes(username)) {
             // Redirect to dashboard.html, role info stored in localStorage

@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Happy Hoe Grocery
+  link(rel='stylesheet' href='../public/css/login.css')
+header
+  h2#welcome-heading(style='font-style: italic; color: black;') Happy Hoe Grocery
+form#loginForm
+  .row
+    label(for='username') Username:
+    input#username(type='text' name='username' required='')
+  .row
+    label(for='password') Password:
+    input#password(type='password' name='password' required='')
+    input#show-password(type='checkbox')
+    |  Show Password
+  .row
+    label(for='role') Role:
+    select#role(name='role' required='')
+      option(value='') Select your role
+      option(value='manager') Manager
+      option(value='sales_agent') Sales Agent
+  .row
+    label(for='branch') Branch:
+    select#branch(name='branch' required='')
+      option(value='') Select your branch
+      option(value='magna') Maganjo
+      option(value='matugga') Matugga
+  .row
+    button#login-button(type='submit') Login
+  .row
+    p
+      | Don&apos;t have an account? 
+      button#signup-button(type='button') Sign-Up
+  .row
+    input#remember-me(type='checkbox')
+    label(for='remember-me' style='font-size: small;') Stay Logged-in
+footer
+  p#tagline &copy; Copyright 2024. All rights reserved.
+script(src='../public/scripts/login.js')

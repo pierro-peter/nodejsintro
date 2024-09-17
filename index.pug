@@ -1,0 +1,27 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Happy Hoe Grocery Ltd.
+  link(rel='stylesheet' href='public/css/main.css')
+header
+  .top-banner
+    span Your Best Inventory Manager
+    a(href='views/login.html') Explore Our Inventory Solutions
+  nav
+    // Removed "Stock" link
+  .search-bar
+    input#searchInput(type='text' placeholder='Search products, brands and categories')
+    button(onclick="window.location.href='login.html'") Search
+main
+  section.main-banner
+    .image-circle
+      img(src='public/images/img1.jpeg' alt='Rice')
+      img(src='public/images/img2.jpeg' alt='Soybeans')
+      img(src='public/images/img3.jpeg' alt='Vegetables')
+      img(src='public/images/img4.jpeg' alt='People')
+    a.shop-now-btn(href='public/views/login.html') View Daily Stock Updates
+footer
+  .footer-content
+    p &copy; 2024 Happy Hoe Grocery Ltd.
+script(src='public/scripts/main.js')

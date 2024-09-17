@@ -1,0 +1,28 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title KGL Stock Overview
+  link(rel='stylesheet' href='/public/css/stock.css')
+// Header Section
+.header
+  h1 Stock Overview
+  p View and manage the current stock levels of all produce
+// Search/Filter Section
+.search-bar
+  input#search-input(type='text' placeholder='Search produce by name...')
+  button(onclick='filterStock()') Search
+// Stock Table
+.container
+  table.stock-table
+    thead
+      tr
+        th Produce Name
+        th Type
+        th Tonnage Available (kg)
+        th Branch
+        th Low Stock Alert
+    tbody#stock-table-body
+      // Stock data will be dynamically inserted here via JavaScript
+// External JavaScript
+script(src='/public/scripts/stock.js')

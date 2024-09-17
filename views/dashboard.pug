@@ -1,0 +1,45 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title KGL Dashboard
+  link(rel='stylesheet' href='/public/css/dashboard.css')
+// Header Section
+.header
+  h1 KGL Dashboard
+  p Welcome! Choose your action below.
+  button#logout-button Logout
+// Main Content
+.content
+  .stats
+    .stat-item
+      h2 Total Stock
+      p#total-stock
+    .stat-item
+      h2 Low Stock Alerts
+      p#low-stock-alerts
+    .stat-item
+      h2 Total Sales
+      p#total-sales
+    .stat-item
+      h2 Today&apos;s Sales
+      p#todays-sales
+    .stat-item
+      h2 Pending Credit
+      p#pending-credit
+  .role-options
+    // Role-Specific Links
+    #stockManagement.role-link
+      h3 Stock Management
+      p Manage and monitor stock levels.
+      a.btn(href='stock.html') Go to Stock Management
+    #salesManagement.role-link
+      h3 Sales Management
+      p Track and record sales activities.
+      a.btn(href='sales.html') Go to Sales Management
+    #reports.role-link
+      h3 Reports
+      p View detailed reports and analytics.
+      a.btn(href='reports.pug') Go to Reports
+// External JavaScript
+script(src='/public/scripts/dashboard.js')

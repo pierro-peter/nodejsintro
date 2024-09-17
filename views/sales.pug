@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title KGL Sales Management
+  link(rel='stylesheet' href='/public/css/sales.css')
+// Header Section
+.header
+  h1 Sales Management
+  p Record and view sales transactions
+// Sales Form Section
+.form-container
+  h2 Record New Sale
+  form#sales-form
+    label(for='produce-name') Produce Name:
+    select#produce-name(required='')
+      option(value='') Select Produce
+      option(value='Beans') Beans
+      option(value='Maize') Maize
+      option(value='Cowpeas') Cowpeas
+      option(value='Rice') Rice
+      option(value='Soybeans') Soybeans
+    label(for='tonnage') Tonnage (kg):
+    input#tonnage(type='number' min='1' required='')
+    label(for='amount-paid') Amount Paid (Ugx):
+    input#amount-paid(type='number' min='10000' required='')
+    label(for='buyer-name') Buyer Name:
+    input#buyer-name(type='text' required='')
+    label(for='sales-agent') Sales Agent:
+    input#sales-agent(type='text' required='')
+    button(type='button' onclick='recordSale()') Record Sale
+// Sales Table Section
+.container
+  h2 Sales Records
+  table.sales-table
+    thead
+      tr
+        th Produce Name
+        th Tonnage (kg)
+        th Amount Paid (Ugx)
+        th Buyer Name
+        th Sales Agent
+        th Date &amp; Time
+    tbody#sales-table-body
+      // Sales records will be dynamically inserted here via JavaScript
+// External JavaScript
+script(src='/public/scripts/sales.js')

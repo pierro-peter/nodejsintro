@@ -1,0 +1,22 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sales Agent Dashboard
+  link(rel='stylesheet' href='/public/css/salesAgent.css')
+  script(src='salesAgents.js' defer='')
+header.header
+  h1 Sales Agent Dashboard
+  button#logout-button Logout
+.content
+  h2 Welcome, Sales Agent
+  .stats
+    .stat-item
+      h2 Today&apos;s Sales
+      p#todays-sales Loading...
+    .stat-item
+      h2 Pending Credit
+      p#pending-credit Loading...
+  a.btn(href='stock.pug') Manage Stock
+  a.btn(href='sales.pug') Manage Sales
+script(src='/public/scripts/salesAgent.js')
